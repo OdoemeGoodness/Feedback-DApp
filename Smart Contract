@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "hardhat/console.sol";
+Jimport "hardhat/console.sol";
 
 contract getFeedback {
     address sender;
@@ -13,7 +13,7 @@ contract getFeedback {
         responses=0
     }
 
-    function response() public viewable returns(uint) {
+    function response() public view returns(uint) {
         if(msg.value>0) {
             responses=responses+1;
         }
@@ -23,7 +23,7 @@ contract getFeedback {
 
         function getAllResponses() public {
             if(msg.sender==address)
-            push(viewable(address));
+            push(view(address));
         }
     }
 }
